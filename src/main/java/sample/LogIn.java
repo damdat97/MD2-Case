@@ -15,6 +15,9 @@ public class LogIn {
     private Button button;
 
     @FXML
+    private Button exit;
+
+    @FXML
     private Label wrongLogIn;
 
     @FXML
@@ -25,6 +28,10 @@ public class LogIn {
 
     public void userLogin(ActionEvent event) {
         checkLogin();
+    }
+
+    public void userExit(ActionEvent event) {
+        checkExit();
     }
 
     public void checkLogin() {
@@ -39,4 +46,7 @@ public class LogIn {
             wrongLogIn.setText("Wrong username or password!");
         }
     }
+     public void checkExit() {
+        System.exit(0);
+     }
 }
