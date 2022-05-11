@@ -33,7 +33,7 @@ public class DictionaryManagement {
     Button deleteAWord;
 
 
-    public void start() {
+    public void drawDictionary() {
         Stage primaryStage = new Stage();
         stageTemp = primaryStage;
         dictionary = new Dictionary();

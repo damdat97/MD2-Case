@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/LogIn.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setTitle("LOG IN");
             stage.setScene(scene);
@@ -18,7 +18,7 @@ public class Main extends Application {
 
     public void chanceScene() {
         DictionaryManagement dictionaryManagement = new DictionaryManagement();
-        dictionaryManagement.start();
+        dictionaryManagement.drawDictionary();
     }
 
     public static void main(String[] args) {
